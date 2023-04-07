@@ -1,0 +1,22 @@
+[debug] [2023-03-31T16:51:47.235Z] ----------------------------------------------------------------------
+[debug] [2023-03-31T16:51:47.236Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-03-31T16:51:47.236Z] CLI Version:   11.25.2
+[debug] [2023-03-31T16:51:47.236Z] Platform:      darwin
+[debug] [2023-03-31T16:51:47.236Z] Node Version:  v16.15.0
+[debug] [2023-03-31T16:51:47.240Z] Time:          Fri Mar 31 2023 12:51:47 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-03-31T16:51:47.240Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-31T16:51:47.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-31T16:51:47.276Z] > authorizing via signed-in user (elaine.leiyoung42@gmail.com)
+[debug] [2023-03-31T16:51:47.276Z] [iam] checking project cs-411-spotify-generator for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-03-31T16:51:47.277Z] > refreshing access token with scopes: []
+[debug] [2023-03-31T16:51:47.278Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-31T16:51:47.278Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-31T16:51:47.541Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-03-31T16:51:47.542Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-31T16:51:47.615Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cs-411-spotify-generator:testIamPermissions [none]
+[debug] [2023-03-31T16:51:47.615Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cs-411-spotify-generator:testIamPermissions x-goog-quota-user=projects/cs-411-spotify-generator
+[debug] [2023-03-31T16:51:47.615Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cs-411-spotify-generator:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-03-31T16:51:48.034Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cs-411-spotify-generator:testIamPermissions 200
+[debug] [2023-03-31T16:51:48.034Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cs-411-spotify-generator:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-03-31T16:51:48.036Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cs-411-spotify-generator [none]
