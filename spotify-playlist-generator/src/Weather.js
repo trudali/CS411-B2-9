@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
-const OPENCAGE_API_KEY = "487387173cf843608a6ede0711de3d9c";
-const OPENWEATHER_API_KEY = "8a3540456c5f2c1d3dfdc434a5c3bc20";
-
+const OPENCAGE_API_KEY = "487387173cf843608a6ede0711de3d9c"
+const OPENWEATHER_API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY
 function Weather() {
   const [location, setLocation] = useState("");
   const [coordinates, setCoordinates] = useState(null);

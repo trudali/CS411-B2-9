@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export function UseSpotifyToken() {
-  const CLIENT_ID = "e687e857785e45aaa016ecbbb7f49ba0"
+  const CLIENT_ID = process.env.REACT_APP_CLIENT_ID
   const REDIRECT_URI = "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
